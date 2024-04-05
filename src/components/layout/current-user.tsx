@@ -49,7 +49,16 @@ export const CurrentUser: React.FC = () => {
         >
           Account settings
         </Button>
-        
+        <Button
+          style={{ textAlign: "left" }}
+          icon={<LogoutOutlined />}
+          type="text"
+          danger
+          block
+          onClick={() => logout()}
+        >
+          Logout
+        </Button>
       </div>
     </div>
   );
